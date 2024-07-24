@@ -46,7 +46,8 @@ class CallParticipantsSpotlightView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final spotlight = _buildSpotlight(context);
-    final participantsBar = _buildParticipantsBar(context);
+    // final participantsBar = _buildParticipantsBar(context);
+    final participantsBar = SizedBox();
 
     Widget child;
     switch (barAlignment) {
