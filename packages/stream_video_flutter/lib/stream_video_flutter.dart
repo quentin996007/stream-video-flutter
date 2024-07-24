@@ -20,6 +20,8 @@ export 'src/call_controls/controls/toggle_screen_sharing_option.dart';
 export 'src/call_controls/controls/toggle_speakerphone_option.dart';
 export 'src/call_participants/call_participant.dart';
 export 'src/call_participants/call_participants.dart';
+export 'src/call_participants/participant_label.dart';
+export 'src/call_participants/indicators/connection_quality_indicator.dart';
 export 'src/call_participants/layout/participant_layout_mode.dart';
 export 'src/call_participants/local_video.dart';
 export 'src/call_screen/call_container.dart';
