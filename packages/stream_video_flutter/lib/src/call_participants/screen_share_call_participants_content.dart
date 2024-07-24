@@ -69,30 +69,6 @@ class ScreenShareCallParticipantsContent extends StatelessWidget {
               call: call,
               participant: participant,
             ),
-            FittedBox(
-              child: Container(
-                padding: const EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  color: colorTheme.barsBg.withOpacity(0.85),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Icon(
-                      Icons.screen_share_rounded,
-                      color: colorTheme.textHighEmphasis,
-                    ),
-                    const SizedBox(width: 8),
-                    // TODO localize hardcoded text
-                    Text(
-                      '$participantName is sharing their screen',
-                      style: videoTheme.textTheme.footnote,
-                    ),
-                  ],
-                ),
-              ),
-            ),
           ],
         );
       },
