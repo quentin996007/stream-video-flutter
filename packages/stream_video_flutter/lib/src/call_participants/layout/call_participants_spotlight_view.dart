@@ -3,7 +3,8 @@ import 'package:stream_video/stream_video.dart';
 
 import '../call_participants.dart';
 
-const _kSpacing = 16.0;
+// const _kSpacing = 16.0;
+const _kSpacing = 0.0;
 
 /// Defines the alignment of the participants bar.
 enum ParticipantsBarAlignment { top, bottom, left, right }
@@ -76,6 +77,10 @@ class CallParticipantsSpotlightView extends StatelessWidget {
     // space.
     if (participants.isEmpty) flex = 1;
 
+    return Expanded(
+      flex: flex,
+      child: spotlightBuilder.call(context, call, spotlight),
+    );
     return Expanded(
       flex: flex,
       child: AspectRatio(
